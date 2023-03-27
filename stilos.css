@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    box-shadow: 2px 1px 2px grey;
+    margin: 20px 30px 5px 30px;
+    justify-content:space-between;
+    padding: 0px 170px 0px 170px;
+}
+
+/* pseudoelemento hover */
+header a:hover {
+    color: chartreuse;
+    text-decoration:overline;
+    background-color: black;
+    border: 1px solid aqua;
+    transition: 1s ease;
+}
+/* rotacion y duracion de la transicion */
+.a3:hover {
+    transform:rotate(360deg);
+    transition: 2s ease;
+}
+/* regla se animación en una keyframe */
+@keyframes izq-to-left {
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+main p {
+    margin-left: 300px;
+    animation-name: izq-to-left;
+    animation-duration: 3s;
+}
